@@ -19,6 +19,7 @@
 - **Testing:** JUnit 5, AssertJ, and MockMvc.
 - **Reporting:** JaCoCo for Code Coverage.
 - **Utilities:** Lombok & Spring Configuration Processor.
+- **Documentation:** Swagger API Documentation.
 
 ---
 
