@@ -10,7 +10,6 @@ class PriceTest {
     void buildConstructor() {
         
         Price price = Price.builder()
-                .id(1L)
                 .brandId(1L)
                 .startDate(LocalDateTime.now())
                 .endDate(LocalDateTime.now().plusDays(1))
@@ -21,7 +20,6 @@ class PriceTest {
                 .currency("EUR")
                 .build();
 
-        assertThat(price.getId()).isNotNull();
         assertThat(price.getBrandId()).isEqualTo(1L);
         assertThat(price.getCurrency()).isEqualTo("EUR");
     }
@@ -30,6 +28,5 @@ class PriceTest {
     void noArgsConstructorTest() {
         Price price = new Price();
         assertThat(price).isNotNull();
-        assertThat(price.getId()).isNull();
     }
 }

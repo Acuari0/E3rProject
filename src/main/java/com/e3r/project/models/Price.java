@@ -28,10 +28,6 @@ import lombok.Setter;
 public class Price implements Serializable{
 
     private static final long serialVersionUID = 1L;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     
     @Column(name = "BRAND_ID")
     private Long brandId;
@@ -42,6 +38,8 @@ public class Price implements Serializable{
     @Column(name = "END_DATE")
     private LocalDateTime endDate;
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PRICE_LIST")
     private Long  priceList;
     
