@@ -12,6 +12,9 @@
 - **Docker Ready**: Includes `spring-boot-docker-compose` support for containerized environments.
 - **Full Test Coverage**: Comprehensive integration tests achieving 100% coverage across business logic.
 
+- **Note**: 
+For testing purposes the application.properties is added.
+
 ## Tech Stack
 
 - **Core:** Spring Boot 4.0.2 & Java 21.
@@ -34,7 +37,7 @@ Returns the price record with the highest priority for a given product, brand, a
 
 | Parameter | Type | Example | Description |
 | :--- | :--- | :--- | :--- |
-|  | String | `2020-06-14-10.00.00` | Target date/time (Format: `yyyy-MM-dd-HH.mm.ss`) |
+|  `applicationDate` | String | `2020-06-14-10.00.00` | Target date/time (Format: `yyyy-MM-dd-HH.mm.ss`) |
 | `productId` | Long | `35455` | Unique product identifier |
 | `brandId` | Long | `1` | Retail chain identifier |
 
