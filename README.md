@@ -43,7 +43,7 @@
 
 Returns the price record with the highest priority for a given product, brand, and date.
 
-**Endpoint:** `GET /api/prices/find`
+**Endpoint:** `GET /api/v1/prices/find`
 
 **Query Parameters:**
 
